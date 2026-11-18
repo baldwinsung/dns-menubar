@@ -1,4 +1,10 @@
-# SimpleDNSMenuBar
+# SimpleDNSMenuBar (archived)
+
+> **Archived 2026-11-18.** Not needed on networks whose DHCP already hands
+> out the right DNS servers; set DNS once in System Settings → Network for the
+> rare network that doesn't. To remove the app and its root helper daemon:
+> `curl -fsSLO https://raw.githubusercontent.com/baldwinsung/homebrew-tap/main/uninstall-menubar-apps.sh && bash uninstall-menubar-apps.sh dns`
+> (then `networksetup -setdnsservers Wi-Fi Empty` to go back to DHCP DNS).
 
 A macOS menu bar app that automatically switches DNS servers based on your Wi-Fi network.
 
